@@ -1,0 +1,44 @@
+/*OCUPATIONS*/
+.occupations {
+    @media screen and (max-width: 1199.98px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      padding-top: 0;
+    }
+  }
+  
+  .occupations__list {
+    display: flex;
+    margin-right: calc(-1 * var(--margin-card));
+    @extend %list;
+  }
+  .occupations__item {
+    flex-basis: calc((100% - 3 * var(--margin-card)) / 3);
+    margin-right: var(--margin-card);
+  }
+  .occupations__thumb {
+    position: relative;
+  }
+  .occupations__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24%;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--occupations-overlay-color);
+    transform: translate(-50%, 0);
+  }
+  .occupations__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--hero-footer-text-color);
+  }
