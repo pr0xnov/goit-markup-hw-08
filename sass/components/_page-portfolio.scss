@@ -142,6 +142,11 @@
     font-size: 18px;
     line-height: 1.56;
     color: var(--hero-footer-text-color);
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+      line-height: 1.75;
+    }
   }
   .galery__card-caption {
     padding: 20px 24px;
